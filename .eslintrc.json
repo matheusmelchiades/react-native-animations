@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "plugins": ["prettier", "import-helpers"],
+  "extends": ["@react-native-community", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": ["/^react/", "module", ["parent", "sibling", "index"]],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ]
+  }
+}
