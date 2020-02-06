@@ -2,6 +2,7 @@ import { createAppContainer } from 'react-navigation';
 import { createDrawerNavigator } from 'react-navigation-drawer';
 
 import Home from './Screens/Home';
+import TabBar from './Screens/TabBar';
 
 const Drawer = createDrawerNavigator(
   {
@@ -9,9 +10,13 @@ const Drawer = createDrawerNavigator(
       name: 'Home',
       screen: Home,
     },
+    TabBar: {
+      name: 'TabBar',
+      screen: TabBar,
+    },
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'TabBar',
   },
 );
 
